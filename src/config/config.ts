@@ -1,0 +1,1 @@
+export const mongoDbUrl = "mongodb://0.0.0.0:27017/shopnow"
