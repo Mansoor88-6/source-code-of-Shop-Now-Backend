@@ -16,8 +16,10 @@ interface UserInput {
   }
 
 export const saveProduct: RequestHandler = async (req,res,next) => {
+    
     try {
         if(req.file){
+          
           const myCloud = await cloudinary.v2.uploader.upload(req.file.path)
 
           const{name,description,price,category} = req.body
@@ -43,6 +45,7 @@ export const saveProduct: RequestHandler = async (req,res,next) => {
         
         
     } catch (error) {
+       
         next(error)
         
     }
