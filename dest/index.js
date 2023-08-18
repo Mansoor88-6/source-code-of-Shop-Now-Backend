@@ -30,8 +30,8 @@ const express_1 = __importDefault(require("express"));
 require("../src/config/dbconnections");
 const Server = __importStar(require("../src/config/express"));
 const app = (0, express_1.default)();
-const port = 3000;
 Server.App(app);
+const port = process.env.PORT;
 app.listen(port, () => {
     console.log("server running on PORT, 3000");
 });
