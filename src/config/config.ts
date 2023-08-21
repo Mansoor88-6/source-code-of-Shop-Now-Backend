@@ -1,1 +1,1 @@
-export const mongoDbUrl = "mongodb://0.0.0.0:27017/shopnow"
+export const mongoDbUrl =  "mongodb+srv://study:muller25@cluster0.djkaqau.mongodb.net/shopnow" 
