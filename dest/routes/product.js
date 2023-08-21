@@ -45,9 +45,7 @@ route.post("/product", (req, res, next) => {
 }, productController.saveProduct);
 
 
-route.get("/product", (req,res)=>{
-    res.status(200).json({message: "this works"})
-});
+route.get("/product", productController.getAllProducts);
 route.get("/product/:id", productController.getProduct);
 route.put("/product/:id", productController.updateProductFully);
 route.delete("/product/:id", productController.delProduct);
