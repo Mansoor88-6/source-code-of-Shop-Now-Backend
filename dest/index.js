@@ -1,4 +1,5 @@
 "use strict";
+
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -27,8 +28,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-require("../src/config/dbconnections");
-const Server = __importStar(require("../src/config/express"));
+require("./config/dbconnections");
+const Server = __importStar(require("./config/express"));
 const app = (0, express_1.default)();
 Server.App(app);
 const port = process.env.PORT;
