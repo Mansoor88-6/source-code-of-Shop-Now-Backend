@@ -7,7 +7,8 @@ import mongoose, { ConnectOptions } from "mongoose";
 async function run() {
     try {
       console.log("Connecting to MongoDB...");
-      await mongoose.connect(mongoDbUrl, {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      await mongoose.connect(mongoDbUrl!, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       } as ConnectOptions);

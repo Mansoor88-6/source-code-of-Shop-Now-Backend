@@ -18,6 +18,7 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             console.log("Connecting to MongoDB...");
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             yield mongoose_1.default.connect(config_1.mongoDbUrl, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,

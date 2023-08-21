@@ -1,1 +1,3 @@
-export const mongoDbUrl =  "mongodb+srv://vercel-admin-user:Ea0foJO9Y9mzBpAk@cluster0.djkaqau.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" 
+import dotenv from "dotenv"
+dotenv.config()
+export const mongoDbUrl =  process.env.MONGODB_URI 
