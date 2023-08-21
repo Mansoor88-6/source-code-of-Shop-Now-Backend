@@ -1,1 +1,1 @@
-export const mongoDbUrl =  "mongodb+srv://study:muller25@cluster0.djkaqau.mongodb.net/shopnow" 
+export const mongoDbUrl =  "mongodb+srv://vercel-admin-user:Ea0foJO9Y9mzBpAk@cluster0.djkaqau.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" 
